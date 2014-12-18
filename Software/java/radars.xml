@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RadarList>
+    <radars>
+        <Radar>
+            <centerX>2000</centerX>
+            <centerY>3000</centerY>
+            <radius>1500</radius>
+        </Radar>
+        <Radar>
+            <centerX>6000</centerX>
+            <centerY>5000</centerY>
+            <radius>1000</radius>
+        </Radar>
+    </radars>
+</RadarList>

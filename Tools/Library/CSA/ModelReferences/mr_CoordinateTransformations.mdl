@@ -1,0 +1,3188 @@
+Model {
+  Name			  "mr_CoordinateTransformations"
+  Version		  7.5
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    9
+    Inport {
+      SignalName	      "simtime"
+      Name		      "simtime"
+    }
+    Inport {
+      SignalName	      "B"
+      Name		      "B"
+    }
+    Inport {
+      SignalName	      "Euler_i"
+      Name		      "Euler_i"
+    }
+    Inport {
+      SignalName	      "q_i_b"
+      Name		      "Quaternion"
+    }
+    Inport {
+      SignalName	      "P_i"
+      Name		      "P_i"
+    }
+    Inport {
+      SignalName	      "V_i"
+      Name		      "V_i"
+    }
+    Inport {
+      SignalName	      "Density"
+      Name		      "Density"
+    }
+    Inport {
+      SignalName	      "Sound"
+      Name		      "Sound"
+    }
+    Inport {
+      SignalName	      "Winds"
+      Name		      "Winds"
+    }
+    NumRootOutports	    44
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Vrel_i"
+      Name		      "Vrel_i"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Vrel_b"
+      Name		      "Vrel_b"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "V_f"
+      Name		      "V_f"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "GeocentricLat"
+      Name		      "GeocentricLat"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "GeodeticLat"
+      Name		      "GeodeticLat"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Longitude"
+      Name		      "Longitude"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Alt"
+      Name		      "Alt"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "LST"
+      Name		      "LST"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "P_ned"
+      Name		      "P_ned"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "P_f"
+      Name		      "P_f"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "V_ned"
+      Name		      "V_ned"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "f2NED"
+      Name		      "f2NED"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "i2f"
+      Name		      "i2f"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "negRhat"
+      Name		      "negRhat"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Euler_lvlh"
+      Name		      "Euler_lvlh"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Euler_ned"
+      Name		      "Euler_ned"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Euler_f"
+      Name		      "Euler_f"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Alpha"
+      Name		      "Alpha"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Beta"
+      Name		      "Beta"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Vtrue"
+      Name		      "Vtrue"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Qbar"
+      Name		      "Qbar"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Mach"
+      Name		      "Mach"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Gamma"
+      Name		      "Gamma"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Mu"
+      Name		      "Mu"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "i2NED"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "NED2body"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "f2body"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "Chi"
+      Name		      "Chi"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "a"
+      Name		      "SemiMajorAxis"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "e"
+      Name		      "Eccentricity"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "theta"
+      Name		      "TrueAnomaly"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "RAAN"
+      Name		      "RAAN"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "i"
+      Name		      "Inclination"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "omega"
+      Name		      "ArgumentOfPerigee"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "deltaT"
+      Name		      "TimeSincePerigee"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "capE"
+      Name		      "EccentricAnomaly"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "rp"
+      Name		      "RadiusPerigee"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "ra"
+      Name		      "RadiusApogee"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "b"
+      Name		      "SemiMinorAxis"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "P"
+      Name		      "SemilatusRectum"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "period"
+      Name		      "OrbitalPeriod"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "n"
+      Name		      "MeanMotion"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "M"
+      Name		      "MeanAnomaly"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      SignalName	      "gamma"
+      Name		      "OrbitGamma"
+    }
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.510"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Fri Sep 01 13:05:02 2006"
+  Creator		  "salluda"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sufanmi"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Oct 28 17:54:05 2010"
+  RTWModifiedTimeStamp	  210187438
+  ModelVersionFormat	  "1.%<AutoIncrement:510>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  on
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "SimSetup.baserate"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "STIndependent"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "getinputstruct(op_HLV_Sim)"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "getstatestruct(op_HLV_Sim)"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  off
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  on
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  on
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "warning"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "warning"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "warning"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic Real Time Simulator"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDate"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  Description		  "Generic Real-Time Target"
+	  GenerateReport	  on
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "grt_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  on
+	  TargetLang		  "C++"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      192
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Shared location"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      on
+	      RTWCAPIParams	      on
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "ModelReferencing"
+      CurrentDlgPage	      "Real-Time Workshop/Custom Code"
+      ConfigPrmDlgPosition    " [ 200, 197, 1080, 827 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Courier New"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Courier New"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Courier New"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusSelector
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "mr_CoordinateTransformations"
+    Location		    [469, 192, 1351, 1024]
+    Open		    off
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    257
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "61"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    81
+    Block {
+      BlockType		      Inport
+      Name		      "simtime"
+      SID		      1
+      Position		      [35, 18, 65, 32]
+      BackgroundColor	      "green"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"simtime"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "B"
+      SID		      2
+      Position		      [25, 448, 55, 462]
+      BackgroundColor	      "green"
+      Port		      "2"
+      IconDisplay	      "Port number"
+      PortDimensions	      "[3 3]"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"B"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Euler_i"
+      SID		      3
+      Position		      [25, 653, 55, 667]
+      BackgroundColor	      "green"
+      Port		      "3"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"Euler_i"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Quaternion"
+      SID		      4
+      Position		      [175, 803, 205, 817]
+      BackgroundColor	      "green"
+      Port		      "4"
+      IconDisplay	      "Port number"
+      PortDimensions	      "4"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"q_i_b"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "P_i"
+      SID		      5
+      Position		      [35, 58, 65, 72]
+      BackgroundColor	      "green"
+      Port		      "5"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"P_i"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "V_i"
+      SID		      6
+      Position		      [25, 343, 55, 357]
+      BackgroundColor	      "green"
+      Port		      "6"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"V_i"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Density"
+      SID		      7
+      Position		      [930, 693, 960, 707]
+      BackgroundColor	      "green"
+      Port		      "7"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"Density"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Sound"
+      SID		      8
+      Position		      [930, 758, 960, 772]
+      BackgroundColor	      "green"
+      Port		      "8"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"Sound"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "Winds"
+      SID		      9
+      Position		      [175, 843, 205, 857]
+      BackgroundColor	      "green"
+      Port		      "9"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+      Port {
+	PortNumber		1
+	Name			"Winds"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      BusSelector
+      Name		      "Bus\nSelector"
+      SID		      10
+      Ports		      [1, 16]
+      Position		      [445, 863, 450, 1327]
+      ShowName		      off
+      OutputSignals	      "a,e,theta,RAAN,i,omega,deltaT,capE,rp,ra,b,P,period,n,M,gamma"
+      Port {
+	PortNumber		1
+	Name			"<a>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"<e>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		3
+	Name			"<theta>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		4
+	Name			"<RAAN>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		5
+	Name			"<i>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		6
+	Name			"<omega>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		7
+	Name			"<deltaT>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		8
+	Name			"<capE>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		9
+	Name			"<rp>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		10
+	Name			"<ra>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		11
+	Name			"<b>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		12
+	Name			"<P>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		13
+	Name			"<period>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		14
+	Name			"<n>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		15
+	Name			"<M>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		16
+	Name			"<gamma>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      11
+      Position		      [710, 80, 790, 100]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "Time.mst"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      SID		      12
+      Position		      [140, 1128, 235, 1152]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "CentralBody.gm"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant4"
+      SID		      13
+      Position		      [205, 370, 280, 390]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "Time.mst"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Euler_I2LVLH"
+      SID		      14
+      Ports		      [3, 1]
+      Position		      [265, 575, 410, 675]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/CoordinateTransformations/Euler_I2LVLH"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	Name			"Euler_lvlh"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "F2NED"
+      SID		      15
+      Ports		      [4, 3]
+      Position		      [635, 226, 730, 384]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/CoordinateTransformations/F2NED"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	Name			"P_ned"
+	PropagatedSignals	"P_ned"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"V_ned"
+	PropagatedSignals	"V_ned"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		3
+	Name			"f2NED"
+	PropagatedSignals	"f2NED"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "FlightParameters"
+      SID		      16
+      Ports		      [5, 8]
+      Position		      [1050, 536, 1190, 864]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/FlightParameters/FlightParameters"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	Name			"Alpha"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"Beta"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		3
+	Name			"Vtrue"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		4
+	Name			"Qbar"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		5
+	Name			"Mach"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		6
+	Name			"Gamma"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		7
+	Name			"Mu"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		8
+	Name			"Chi"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      From
+      Name		      "From3"
+      SID		      17
+      Position		      [195, 150, 270, 170]
+      ShowName		      off
+      GotoTag		      "simtime"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From4"
+      SID		      18
+      Position		      [710, 105, 775, 125]
+      ShowName		      off
+      GotoTag		      "simtime"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From6"
+      SID		      19
+      Position		      [205, 400, 270, 420]
+      ShowName		      off
+      GotoTag		      "simtime"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto3"
+      SID		      20
+      Position		      [95, 14, 170, 36]
+      ShowName		      off
+      GotoTag		      "simtime"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "I2F"
+      SID		      21
+      Ports		      [4, 3]
+      Position		      [345, 300, 440, 430]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/CoordinateTransformations/I2F"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	Name			"P_f"
+	PropagatedSignals	"P_f"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"V_f"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		3
+	Name			"i2f"
+	PropagatedSignals	"f_C_i"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "I2LLA"
+      SID		      22
+      Ports		      [2, 4]
+      Position		      [355, 23, 450, 212]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/CoordinateTransformations/I2LLA"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	Name			"GeocentricLat"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"GeodeticLat"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		3
+	Name			"Longitude"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		4
+	Name			"Alt"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "I2b"
+      SID		      23
+      Ports		      [4, 2]
+      Position		      [270, 711, 410, 869]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"Vrel_i"
+	PropagatedSignals	"Vrel_i"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"Vrel_b"
+	PropagatedSignals	"uvw"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"I2b"
+	Location		[259, 70, 1598, 1127]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	257
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"136"
+	Block {
+	  BlockType		  Inport
+	  Name			  "P_i"
+	  SID			  24
+	  Position		  [55, 68, 85, 82]
+	  BackgroundColor	  "green"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "3"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "P_i"
+	    PropagatedSignals	    "P_i"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "V_i"
+	  SID			  25
+	  Position		  [55, 128, 85, 142]
+	  BackgroundColor	  "green"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "3"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "V_i"
+	    PropagatedSignals	    "V_i"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Quaternion"
+	  SID			  26
+	  Position		  [365, 108, 395, 122]
+	  BackgroundColor	  "green"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "4"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "q_i_b"
+	    PropagatedSignals	    "q_i_b"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Winds"
+	  SID			  27
+	  Position		  [55, 188, 85, 202]
+	  BackgroundColor	  "green"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "3"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  28
+	  Position		  [20, 28, 150, 52]
+	  ForegroundColor	  "darkGreen"
+	  ShowName		  off
+	  Value			  "CentralBody.OmegaE"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  SID			  29
+	  Ports			  [2, 1]
+	  Position		  [190, 24, 245, 91]
+	  ShowName		  off
+	  Multiplication	  "Matrix(*)"
+	  InputSameDT		  off
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Quaternion\nVector Transform"
+	  SID			  30
+	  Ports			  [2, 1]
+	  Position		  [460, 107, 500, 143]
+	  BackgroundColor	  "cyan"
+	  LibraryVersion	  "1.1309"
+	  SourceBlock		  "CSA_Library/CoordinateTransformations/QuaternionVectorTransform"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  Port {
+	    PortNumber		    1
+	    Name		    "uvw"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  31
+	  Ports			  [3, 1]
+	  Position		  [250, 125, 270, 145]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "Vrel_i"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vrel_i"
+	  SID			  32
+	  Position		  [365, 63, 395, 77]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vrel_b"
+	  SID			  33
+	  Position		  [595, 118, 625, 132]
+	  BackgroundColor	  "red"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Winds"
+	  SrcPort		  1
+	  Points		  [170, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Vrel_i"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Quaternion\nVector Transform"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Labels		    [2, 0]
+	    Points		    [0, -65]
+	    DstBlock		    "Vrel_i"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "P_i"
+	  SrcBlock		  "P_i"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "q_i_b"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Quaternion"
+	  SrcPort		  1
+	  DstBlock		  "Quaternion\nVector Transform"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "V_i"
+	  SrcBlock		  "V_i"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "uvw"
+	  Labels		  [1, 1]
+	  SrcBlock		  "Quaternion\nVector Transform"
+	  SrcPort		  1
+	  DstBlock		  "Vrel_b"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "LST1"
+      SID		      34
+      Ports		      [3, 1]
+      Position		      [810, 77, 905, 153]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/CoordinateTransformations/LST"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	Name			"LST"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Orientations"
+      SID		      35
+      Ports		      [3, 5]
+      Position		      [880, 328, 985, 482]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/CoordinateTransformations/Orientations"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		4
+	Name			"Euler_f"
+	PropagatedSignals	"Euler_f"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		5
+	Name			"Euler_ned"
+	PropagatedSignals	"Euler_ned"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PosVel2OrbEl"
+      SID		      36
+      Ports		      [3, 1]
+      Position		      [270, 1030, 410, 1160]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/OrbitalDynamics/PosVel2OrbEl"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "negRhat1"
+      SID		      37
+      Ports		      [2, 1]
+      Position		      [270, 482, 405, 533]
+      BackgroundColor	      "cyan"
+      LibraryVersion	      "1.1309"
+      SourceBlock	      "CSA_Library/CoordinateTransformations/negRhat"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	Name			"negRhat"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Vrel_i"
+      SID		      38
+      Position		      [480, 743, 510, 757]
+      BackgroundColor	      "gray"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Vrel_b"
+      SID		      39
+      Position		      [480, 788, 510, 802]
+      BackgroundColor	      "gray"
+      Port		      "2"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "V_f"
+      SID		      40
+      Position		      [495, 333, 525, 347]
+      BackgroundColor	      "gray"
+      Port		      "3"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "GeocentricLat"
+      SID		      41
+      Position		      [545, 43, 575, 57]
+      BackgroundColor	      "gray"
+      Port		      "4"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "GeodeticLat"
+      SID		      42
+      Position		      [640, 88, 670, 102]
+      BackgroundColor	      "gray"
+      Port		      "5"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Longitude"
+      SID		      43
+      Position		      [640, 158, 670, 172]
+      BackgroundColor	      "gray"
+      Port		      "6"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Alt"
+      SID		      44
+      Position		      [485, 178, 515, 192]
+      BackgroundColor	      "gray"
+      Port		      "7"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "LST"
+      SID		      45
+      Position		      [940, 108, 970, 122]
+      BackgroundColor	      "gray"
+      Port		      "8"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "P_ned"
+      SID		      46
+      Position		      [810, 248, 840, 262]
+      BackgroundColor	      "gray"
+      Port		      "9"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "P_f"
+      SID		      47
+      Position		      [495, 288, 525, 302]
+      BackgroundColor	      "gray"
+      Port		      "10"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "V_ned"
+      SID		      48
+      Position		      [865, 298, 895, 312]
+      BackgroundColor	      "gray"
+      Port		      "11"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "f2NED"
+      SID		      49
+      Position		      [815, 368, 845, 382]
+      BackgroundColor	      "gray"
+      Port		      "12"
+      IconDisplay	      "Port number"
+      PortDimensions	      "[3 3]"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "i2f"
+      SID		      50
+      Position		      [815, 413, 845, 427]
+      BackgroundColor	      "gray"
+      Port		      "13"
+      IconDisplay	      "Port number"
+      PortDimensions	      "[3 3]"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "negRhat"
+      SID		      51
+      Position		      [485, 503, 515, 517]
+      BackgroundColor	      "gray"
+      Port		      "14"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Euler_lvlh"
+      SID		      52
+      Position		      [485, 618, 515, 632]
+      BackgroundColor	      "gray"
+      Port		      "15"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Euler_ned"
+      SID		      53
+      Position		      [1120, 458, 1150, 472]
+      BackgroundColor	      "gray"
+      Port		      "16"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Euler_f"
+      SID		      54
+      Position		      [1070, 428, 1100, 442]
+      BackgroundColor	      "gray"
+      Port		      "17"
+      IconDisplay	      "Port number"
+      PortDimensions	      "3"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Alpha"
+      SID		      55
+      Position		      [1255, 553, 1285, 567]
+      BackgroundColor	      "gray"
+      Port		      "18"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Beta"
+      SID		      56
+      Position		      [1255, 593, 1285, 607]
+      BackgroundColor	      "gray"
+      Port		      "19"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Vtrue"
+      SID		      57
+      Position		      [1255, 633, 1285, 647]
+      BackgroundColor	      "gray"
+      Port		      "20"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Qbar"
+      SID		      58
+      Position		      [1255, 673, 1285, 687]
+      BackgroundColor	      "gray"
+      Port		      "21"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Mach"
+      SID		      59
+      Position		      [1255, 713, 1285, 727]
+      BackgroundColor	      "gray"
+      Port		      "22"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Gamma"
+      SID		      60
+      Position		      [1255, 753, 1285, 767]
+      BackgroundColor	      "gray"
+      Port		      "23"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Mu"
+      SID		      61
+      Position		      [1255, 793, 1285, 807]
+      BackgroundColor	      "gray"
+      Port		      "24"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "i2NED"
+      SID		      62
+      Position		      [1115, 338, 1145, 352]
+      BackgroundColor	      "gray"
+      Port		      "25"
+      IconDisplay	      "Port number"
+      PortDimensions	      "[3 3]"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "NED2body"
+      SID		      63
+      Position		      [1060, 368, 1090, 382]
+      BackgroundColor	      "gray"
+      Port		      "26"
+      IconDisplay	      "Port number"
+      PortDimensions	      "[3 3]"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "f2body"
+      SID		      64
+      Position		      [1115, 398, 1145, 412]
+      BackgroundColor	      "gray"
+      Port		      "27"
+      IconDisplay	      "Port number"
+      PortDimensions	      "[3 3]"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Chi"
+      SID		      65
+      Position		      [1255, 833, 1285, 847]
+      BackgroundColor	      "gray"
+      Port		      "28"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      DataType		      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "double"
+      SignalType	      "real"
+      SamplingMode	      "Sample based"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "SemiMajorAxis"
+      SID		      66
+      Position		      [540, 863, 570, 877]
+      BackgroundColor	      "gray"
+      Port		      "29"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Eccentricity"
+      SID		      67
+      Position		      [540, 893, 570, 907]
+      BackgroundColor	      "gray"
+      Port		      "30"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "TrueAnomaly"
+      SID		      68
+      Position		      [540, 923, 570, 937]
+      BackgroundColor	      "gray"
+      Port		      "31"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "RAAN"
+      SID		      69
+      Position		      [540, 953, 570, 967]
+      BackgroundColor	      "gray"
+      Port		      "32"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Inclination"
+      SID		      70
+      Position		      [540, 983, 570, 997]
+      BackgroundColor	      "gray"
+      Port		      "33"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "ArgumentOfPerigee"
+      SID		      71
+      Position		      [540, 1013, 570, 1027]
+      BackgroundColor	      "gray"
+      Port		      "34"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "TimeSincePerigee"
+      SID		      72
+      Position		      [540, 1043, 570, 1057]
+      BackgroundColor	      "gray"
+      Port		      "35"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "EccentricAnomaly"
+      SID		      73
+      Position		      [540, 1073, 570, 1087]
+      BackgroundColor	      "gray"
+      Port		      "36"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "RadiusPerigee"
+      SID		      74
+      Position		      [540, 1103, 570, 1117]
+      BackgroundColor	      "gray"
+      Port		      "37"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "RadiusApogee"
+      SID		      75
+      Position		      [540, 1133, 570, 1147]
+      BackgroundColor	      "gray"
+      Port		      "38"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "SemiMinorAxis"
+      SID		      76
+      Position		      [540, 1163, 570, 1177]
+      BackgroundColor	      "gray"
+      Port		      "39"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "SemilatusRectum"
+      SID		      77
+      Position		      [540, 1193, 570, 1207]
+      BackgroundColor	      "gray"
+      Port		      "40"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "OrbitalPeriod"
+      SID		      78
+      Position		      [540, 1223, 570, 1237]
+      BackgroundColor	      "gray"
+      Port		      "41"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "MeanMotion"
+      SID		      79
+      Position		      [540, 1253, 570, 1267]
+      BackgroundColor	      "gray"
+      Port		      "42"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "MeanAnomaly"
+      SID		      80
+      Position		      [540, 1283, 570, 1297]
+      BackgroundColor	      "gray"
+      Port		      "43"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "OrbitGamma"
+      SID		      81
+      Position		      [540, 1313, 570, 1327]
+      BackgroundColor	      "gray"
+      Port		      "44"
+      IconDisplay	      "Port number"
+      PortDimensions	      "1"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Line {
+      Name		      "Mu"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      7
+      DstBlock		      "Mu"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Mach"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      5
+      DstBlock		      "Mach"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Qbar"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      4
+      DstBlock		      "Qbar"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Vtrue"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      3
+      DstBlock		      "Vtrue"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Beta"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      2
+      DstBlock		      "Beta"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Alpha"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      1
+      DstBlock		      "Alpha"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Euler_ned"
+      Labels		      [0, 0]
+      SrcBlock		      "Orientations"
+      SrcPort		      5
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"Euler_ned"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 105]
+	DstBlock		"FlightParameters"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "Euler_f"
+      Labels		      [0, 0]
+      SrcBlock		      "Orientations"
+      SrcPort		      4
+      DstBlock		      "Euler_f"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Sound"
+      Labels		      [0, 0]
+      SrcBlock		      "Sound"
+      SrcPort		      1
+      DstBlock		      "FlightParameters"
+      DstPort		      4
+    }
+    Line {
+      Name		      "Density"
+      Labels		      [0, 0]
+      SrcBlock		      "Density"
+      SrcPort		      1
+      DstBlock		      "FlightParameters"
+      DstPort		      3
+    }
+    Line {
+      Name		      "Euler_lvlh"
+      Labels		      [0, 0]
+      SrcBlock		      "Euler_I2LVLH"
+      SrcPort		      1
+      DstBlock		      "Euler_lvlh"
+      DstPort		      1
+    }
+    Line {
+      Name		      "V_ned"
+      Labels		      [0, 0]
+      SrcBlock		      "F2NED"
+      SrcPort		      2
+      Points		      [40, 0]
+      Branch {
+	DstBlock		"V_ned"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 330]
+	DstBlock		"FlightParameters"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "P_ned"
+      Labels		      [0, 0]
+      SrcBlock		      "F2NED"
+      SrcPort		      1
+      DstBlock		      "P_ned"
+      DstPort		      1
+    }
+    Line {
+      Name		      "LST"
+      Labels		      [0, 0]
+      SrcBlock		      "LST1"
+      SrcPort		      1
+      DstBlock		      "LST"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Alt"
+      Labels		      [0, 0]
+      SrcBlock		      "I2LLA"
+      SrcPort		      4
+      DstBlock		      "Alt"
+      DstPort		      1
+    }
+    Line {
+      Name		      "GeocentricLat"
+      Labels		      [0, 0]
+      SrcBlock		      "I2LLA"
+      SrcPort		      1
+      DstBlock		      "GeocentricLat"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Vrel_i"
+      Labels		      [0, 0]
+      SrcBlock		      "I2b"
+      SrcPort		      1
+      DstBlock		      "Vrel_i"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Vrel_b"
+      Labels		      [0, 0]
+      SrcBlock		      "I2b"
+      SrcPort		      2
+      Points		      [35, 0]
+      Branch {
+	Points			[0, -35]
+	DstBlock		"Vrel_b"
+	DstPort			1
+      }
+      Branch {
+	Labels			[-1, 1]
+	DstBlock		"FlightParameters"
+	DstPort			5
+      }
+    }
+    Line {
+      Name		      "q_i_b"
+      Labels		      [-1, 0]
+      SrcBlock		      "Quaternion"
+      SrcPort		      1
+      DstBlock		      "I2b"
+      DstPort		      3
+    }
+    Line {
+      Name		      "Winds"
+      SrcBlock		      "Winds"
+      SrcPort		      1
+      DstBlock		      "I2b"
+      DstPort		      4
+    }
+    Line {
+      Name		      "negRhat"
+      Labels		      [0, 0]
+      SrcBlock		      "negRhat1"
+      SrcPort		      1
+      DstBlock		      "negRhat"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Euler_i"
+      Labels		      [-1, 0]
+      SrcBlock		      "Euler_i"
+      SrcPort		      1
+      DstBlock		      "Euler_I2LVLH"
+      DstPort		      3
+    }
+    Line {
+      Name		      "B"
+      Labels		      [1, 1]
+      SrcBlock		      "B"
+      SrcPort		      1
+      Points		      [150, 0]
+      Branch {
+	Labels			[-1, 0]
+	Points			[0, 40]
+	DstBlock		"negRhat1"
+	DstPort			1
+      }
+      Branch {
+	Labels			[1, 1]
+	DstBlock		"Orientations"
+	DstPort			3
+      }
+    }
+    Line {
+      Name		      "f2NED"
+      Labels		      [0, 0]
+      SrcBlock		      "F2NED"
+      SrcPort		      3
+      Points		      [50, 0]
+      Branch {
+	Points			[0, 20]
+	DstBlock		"f2NED"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Orientations"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "i2f"
+      Labels		      [0, 0]
+      SrcBlock		      "I2F"
+      SrcPort		      3
+      Points		      [0, -5; 340, 0]
+      Branch {
+	Points			[0, 15]
+	DstBlock		"i2f"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Orientations"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "Longitude"
+      Labels		      [0, 0]
+      SrcBlock		      "I2LLA"
+      SrcPort		      3
+      Points		      [90, 0]
+      Branch {
+	Points			[75, 0]
+	Branch {
+	  Points		  [0, 25]
+	  DstBlock		  "Longitude"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "LST1"
+	  DstPort		  3
+	}
+      }
+      Branch {
+	Points			[0, 145]
+	DstBlock		"F2NED"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "GeodeticLat"
+      Labels		      [0, 0]
+      SrcBlock		      "I2LLA"
+      SrcPort		      2
+      Points		      [140, 0]
+      Branch {
+	DstBlock		"GeodeticLat"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 150]
+	DstBlock		"F2NED"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "V_f"
+      Labels		      [0, 0]
+      SrcBlock		      "I2F"
+      SrcPort		      2
+      Points		      [35, 0]
+      Branch {
+	DstBlock		"V_f"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"F2NED"
+	DstPort			4
+      }
+    }
+    Line {
+      Name		      "P_f"
+      Labels		      [0, 0]
+      SrcBlock		      "I2F"
+      SrcPort		      1
+      Points		      [0, 5; 35, 0]
+      Branch {
+	DstBlock		"P_f"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"F2NED"
+	DstPort			3
+      }
+    }
+    Line {
+      Name		      "V_i"
+      Labels		      [0, 0]
+      SrcBlock		      "V_i"
+      SrcPort		      1
+      Points		      [35, 0]
+      Branch {
+	Labels			[1, 0]
+	Points			[0, 275]
+	Branch {
+	  Labels		  [1, 0]
+	  Points		  [0, 145]
+	  Branch {
+	    DstBlock		    "I2b"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Labels		    [2, 0]
+	    Points		    [0, 325]
+	    DstBlock		    "PosVel2OrbEl"
+	    DstPort		    2
+	  }
+	}
+	Branch {
+	  Labels		  [1, 1]
+	  DstBlock		  "Euler_I2LVLH"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	DstBlock		"I2F"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "From3"
+      SrcPort		      1
+      Points		      [65, 0]
+      DstBlock		      "I2LLA"
+      DstPort		      2
+    }
+    Line {
+      Name		      "P_i"
+      SrcBlock		      "P_i"
+      SrcPort		      1
+      Points		      [75, 0]
+      Branch {
+	Labels			[1, 0]
+	Points			[0, 255]
+	Branch {
+	  Points		  [0, 200]
+	  Branch {
+	    Points		    [0, 70]
+	    Branch {
+	      Points		      [0, 140]
+	      Branch {
+		Labels			[1, 1]
+		DstBlock		"I2b"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[2, 0]
+		Points			[0, 320]
+		DstBlock		"PosVel2OrbEl"
+		DstPort			1
+	      }
+	    }
+	    Branch {
+	      Labels		      [1, 1]
+	      DstBlock		      "Euler_I2LVLH"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Labels		    [1, 1]
+	    DstBlock		    "negRhat1"
+	    DstPort		    2
+	  }
+	}
+	Branch {
+	  DstBlock		  "I2F"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Labels			[-1, 0]
+	Points			[195, 0]
+	DstBlock		"I2LLA"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Constant4"
+      SrcPort		      1
+      DstBlock		      "I2F"
+      DstPort		      3
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "LST1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From4"
+      SrcPort		      1
+      DstBlock		      "LST1"
+      DstPort		      2
+    }
+    Line {
+      Name		      "simtime"
+      Labels		      [0, 0]
+      SrcBlock		      "simtime"
+      SrcPort		      1
+      DstBlock		      "Goto3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From6"
+      SrcPort		      1
+      DstBlock		      "I2F"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Orientations"
+      SrcPort		      1
+      DstBlock		      "i2NED"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Orientations"
+      SrcPort		      2
+      DstBlock		      "NED2body"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Orientations"
+      SrcPort		      3
+      DstBlock		      "f2body"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Chi"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      8
+      DstBlock		      "Chi"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Gamma"
+      Labels		      [0, 0]
+      SrcBlock		      "FlightParameters"
+      SrcPort		      6
+      DstBlock		      "Gamma"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "PosVel2OrbEl"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "PosVel2OrbEl"
+      SrcPort		      1
+      DstBlock		      "Bus\nSelector"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<a>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      1
+      DstBlock		      "SemiMajorAxis"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<e>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      2
+      DstBlock		      "Eccentricity"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<theta>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      3
+      DstBlock		      "TrueAnomaly"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<RAAN>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      4
+      DstBlock		      "RAAN"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<i>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      5
+      DstBlock		      "Inclination"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<omega>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      6
+      DstBlock		      "ArgumentOfPerigee"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<deltaT>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      7
+      DstBlock		      "TimeSincePerigee"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<capE>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      8
+      DstBlock		      "EccentricAnomaly"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<rp>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      9
+      DstBlock		      "RadiusPerigee"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<ra>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      10
+      DstBlock		      "RadiusApogee"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<b>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      11
+      DstBlock		      "SemiMinorAxis"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<P>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      12
+      DstBlock		      "SemilatusRectum"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<period>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      13
+      DstBlock		      "OrbitalPeriod"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<n>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      14
+      DstBlock		      "MeanMotion"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<M>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      15
+      DstBlock		      "MeanAnomaly"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<gamma>"
+      Labels		      [0, 0]
+      SrcBlock		      "Bus\nSelector"
+      SrcPort		      16
+      DstBlock		      "OrbitGamma"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "b   --> Body\ni   --> Inertial\nrel --> Relative Wind\ncg  --> Center of Gravity"
+      Position		      [1097, 62]
+      HorizontalAlignment     "left"
+      DropShadow	      on
+    }
+  }
+}

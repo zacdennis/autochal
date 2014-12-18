@@ -1,0 +1,43 @@
+Copyright Northrop Grumman Corporation 2011
+Maintained by: GN&C Technology (Dept 9V21): Aerospace Systems - Redondo Beach, CA
+http://vodka.ccc.northgrum.com/trac/CSA/
+
+-------  CSA Library Information  ------------------------------------------------
+(Prevents unintended loading of CSA Library into newer/older version of MATLAB)
+
+Subversion Revision Information At Last Commit
+$URL: https://svn.ngst.northgrum.com/repos/CSA/trunk/CSA/CSA_Library_MATLAB_Version.txt $
+$Rev: 3197 $
+$Date: 2014-05-20 18:39:00 -0500 (Tue, 20 May 2014) $
+$Author: sufanmi $
+
+Current MATLAB Version: R2013a
+Updated to Current Version on: 5/20/2014
+Completed in SVN Repository revision: 3197
+
+-----------------------------------------------------------------------------------
+All subsequent repository revisions use the above Matlab version.
+See below for previous revision information
+-----------------------------------------------------------------------------------
+
+Prevision MATLAB Versions
+MATLAB Version: R2012a
+Updated to Current Version on: 5/20/2014
+Completed in SVN Repository revision: 3195
+Tagged URL: https://svn.ngst.northgrum.com/repos/CSA/tags/v4.1_r2012a
+
+MATLAB Version: R2010a
+Updated to Current Version on: 7/16/2010
+Completed in SVN Repository revision: 30
+Tagged URL: https://svn.ngst.northgrum.com/repos/CSA/tags/r2010a_final (r2518)
+
+MATLAB Version: R2009b
+Updated to Current Version on: 7/15/2010
+CSA SVN Repository revision: 29
+
+MATLAB Version: R2009a
+Last Used on:
+Last SVN Repository revision:
+
+
+
